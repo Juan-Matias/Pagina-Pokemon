@@ -1,0 +1,81 @@
+body {
+    background-color: white;
+    color: black; 
+    font-size:16px;/*tamaño de fuente */
+    font-family:Arial,Helvetica,sans-serif;/*Familia tipográfica*/
+    padding:0px;/*relleno*/
+    margin:0px;
+}
+.nav{/*ruta del menu home,services,etc*/
+    background-color:cadetblue;/*color del fondo*/
+    color:white;
+}
+.nav ul{
+    margin:0px;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 0px;
+
+}
+.nav ul li {/*ruta del menu home,services,etc*/
+    padding:16px;
+    text-align:center;/*aliniacion del texto*/
+    font-size: 1.2rem;
+    border-bottom: 1px solid black;
+    transition:background-color 0.2s ;
+
+}
+.nav ul  li:hover{/*Agrega una transicion al menu*/
+    background-color:black;
+}
+.image-area{
+    background-image:url("Images/Background.png");/*Leer imagen*/
+    background-position:center;/*posicion de la imagen*/
+    background-size:cover;/*tamaño de fondo*/
+    padding-top:200px; ;
+    padding-bottom:200px; 
+}
+.centered-container{/*Aplica la configuracion a todo los textos*/
+    max-width:1020px;
+    margin:0px auto;
+    padding:opx 16px;
+}
+.image-text{/*modificar el texto*/
+    text-align:center;/*alinear en el centro*/
+    background-color: rgb(87, 87, 87);/*color del fondo*/
+    color:white;/*color de la letra*/
+    font-size:2.5rem;/*tamaño de la letra*/
+    max-width:1020px; 
+
+}
+.intro-text {/*modificar el texto de la intro*/
+    color: grey;
+    font-size: 1.5rem;/*tamaño de fuente*/
+    text-align:center;
+    padding-top:50px;
+    padding-bottom: 50px;
+}
+.single-service{/*alinear el texto de cada imagen*/
+    text-align:center;
+    margin-bottom:32px;
+}
+.single-service p {/*modificar texto de la ruta 'p'*/
+    padding:opx 16px;
+}
+
+@media screen and (min-width: 700px) {/*condicion si la pagina es de 700pixeles*/
+    .nav ul {/*ruta nav ul*/
+      text-align: right;/*el texto que ubicado ala derecha*/
+    }
+    .nav ul li {/*ruta nav ul li*/
+      display: inline-block;/*mostrar bloque en línea*/
+      border-bottom: 0px;
+      border-left: 1px solid black;
+      text-align: left;
+    }
+    .single-service{
+        width:50%;
+        float:left;
+    }
+
+}
